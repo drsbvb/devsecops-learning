@@ -1,4 +1,4 @@
-resource "aws_vpc" "vpc_ccousin" {
+resource "aws_vpc" "vpc_drs" {
   cidr_block           = var.VpcCidr
   instance_tenancy     = "default"
   enable_dns_support   = "true"
