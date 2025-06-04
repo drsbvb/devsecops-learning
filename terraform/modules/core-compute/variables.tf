@@ -1,0 +1,16 @@
+variable "VpcName" {}
+variable "VpcCidr" {}
+variable "CidrInternet" {}
+variable "PublicRTName" {}
+variable "PrivateRTName" {}
+variable "IGWName" {}
+variable "NGWName" {}
+variable "PublicSubnetName" {}
+variable "PrivateSubnetName" {}
+variable "Ec2Name" {}
+variable "Ec2Name2" {}
+variable "InstanceType" {}
+variable "SgName" {}
+variable "SubnetAllowed" {}
+variable "SshKeyName" {}
+variable "SshKeyPath" {}
