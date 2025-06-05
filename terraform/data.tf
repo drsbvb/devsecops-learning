@@ -13,11 +13,11 @@ data "aws_ami" "ami_ubuntu" {
 }
 
 data "aws_iam_role" "iam_role_student" {
-  name = "EKS_Students"
+  name = "eks_students"
 }
 
 data "aws_iam_policy" "eks_students_policies" {
-  name = "Students"
+  name = "students"
 }
 
 data "aws_iam_policy" "iam_worker_node_policy" {

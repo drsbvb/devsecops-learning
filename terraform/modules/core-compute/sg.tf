@@ -1,5 +1,5 @@
 resource "aws_security_group" "traffic_allowed" {
-  vpc_id      = aws_vpc.vpc_ccousin.id
+  vpc_id      = aws_vpc.vpc_drs.id
   name        = var.SgName
 
   tags = {

@@ -1,5 +1,5 @@
 output "vpc_id" {
-  value = aws_vpc.vpc_ccousin.id
+  value = aws_vpc.vpc_drs.id
 }
 
 output "public_subnet_ids" {

@@ -1,5 +1,5 @@
 resource "aws_route_table" "private_route_table" {
-  vpc_id = aws_vpc.vpc_ccousin.id
+  vpc_id = aws_vpc.vpc_drs.id
   route {
     cidr_block = var.CidrInternet
     gateway_id = aws_nat_gateway.nat_gw.id
@@ -10,10 +10,10 @@ resource "aws_route_table" "private_route_table" {
 }
 
 resource "aws_route_table" "public_route_table" {
-  vpc_id = aws_vpc.vpc_ccousin.id
+  vpc_id = aws_vpc.vpc_drs.id
   route {
     cidr_block = var.CidrInternet
-    gateway_id = aws_internet_gateway.igw_ccousin.id
+    gateway_id = aws_internet_gateway.igw_drs.id
   }
   tags = {
     Name = var.PublicRTName
